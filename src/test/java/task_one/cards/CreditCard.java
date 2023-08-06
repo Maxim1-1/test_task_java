@@ -1,4 +1,4 @@
-package cards;
+package task_one.cards;
 
 
 public class CreditCard extends DebitCard {

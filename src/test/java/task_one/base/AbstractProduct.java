@@ -1,4 +1,4 @@
-package base;
+package task_one.base;
 
 public abstract class AbstractProduct {
 

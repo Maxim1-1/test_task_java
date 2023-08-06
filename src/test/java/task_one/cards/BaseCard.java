@@ -1,6 +1,6 @@
-package cards;
+package task_one.cards;
 
-import base.AbstractProduct;
+import task_one.base.AbstractProduct;
 
 public abstract class BaseCard extends AbstractProduct{
 

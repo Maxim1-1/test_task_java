@@ -1,6 +1,6 @@
-package contribution;
+package task_one.contribution;
 
-import base.AbstractProduct;
+import task_one.base.AbstractProduct;
 
 
 public class Contribution extends AbstractProduct {
