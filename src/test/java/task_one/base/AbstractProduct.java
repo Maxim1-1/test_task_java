@@ -2,13 +2,13 @@ package task_one.base;
 
 public abstract class AbstractProduct {
 
-    protected String currency;
-    protected int balance;
-    protected String name ;
+    public String currency;
+    public int balance;
+    public String name ;
 
-    protected void replenishmentAmount(int amount) { balance+=amount;};
+    public void replenishmentAmount(int amount) { balance=balance+amount;};
 
-    protected int getBalance() {return balance;};
+    public int getBalance() {return balance;};
 
 
 }

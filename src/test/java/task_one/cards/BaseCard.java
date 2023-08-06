@@ -4,6 +4,9 @@ import task_one.base.AbstractProduct;
 
 public abstract class BaseCard extends AbstractProduct{
 
-     protected void debit(int writeOffAmount) {balance=-writeOffAmount;};
+     public void debit(int writeOffAmount) {
+          balance=balance-writeOffAmount;};
 
+     public BaseCard() {
+     }
 }

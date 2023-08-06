@@ -1,29 +1,27 @@
 package task_one.cards;
 
 
-public class CreditCard extends DebitCard {
+public class CreditCard extends BaseCard {
 
     int interestRate;
-    int maxLimit;
+    int debtMaxLimit;
 
     @Override
-    protected void debit(int writeOffAmount) {
-        if (balance + maxLimit >= writeOffAmount) {
+    public void debit(int writeOffAmount) {
+        if (balance >= 0) {
             super.debit(writeOffAmount);
         } else {
             System.out.println("Недостаточно средств");
         }
     }
 
-    public int getInterestRate() {
-        if (balance < 0) {
-            return balance;
-        }
-        return 0;
+    public int getDebt() {
+        return debtMaxLimit;
     }
 
-    public CreditCard(int interestRate, int maxLimit) {
+    public CreditCard(int interestRate, int debtMaxLimit) {
         this.interestRate = interestRate;
-        this.maxLimit = maxLimit;
+        this.debtMaxLimit = debtMaxLimit;
+        this.balance = balance+debtMaxLimit;
     }
 }

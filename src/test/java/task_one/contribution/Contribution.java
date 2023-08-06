@@ -6,12 +6,12 @@ import task_one.base.AbstractProduct;
 public class Contribution extends AbstractProduct {
 
     @Override
-    protected void replenishmentAmount(int amount) {
+    public void replenishmentAmount(int amount) {
         super.replenishmentAmount(amount);
     }
 
     @Override
-    protected int getBalance() {
+    public int getBalance() {
         return super.getBalance();
     }
 
